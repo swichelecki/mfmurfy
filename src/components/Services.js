@@ -42,7 +42,7 @@ class Services extends Component {
                     </div>
                     <div className="services-div-wrapper">
                         <div className="services-push-out">
-                            <p className="services-push-out-text">MF Murfy works in After Effects and Final Cut to create <br/> cutting-edge CG and Motion Graphic Effects.</p>
+                            <p className="services-push-out-text">MF Murfy works in After Effects and Final Cut to <br/> create cutting-edge CG and Motion Graphic Effects.</p>
                             <div className="services-box-relative-container">
                                 <div className="services-box">
                                     <p className="services-box-title">Editing</p>

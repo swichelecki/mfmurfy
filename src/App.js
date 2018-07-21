@@ -8,6 +8,8 @@ import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './css/app.css';
+import './images/member2.jpg';
+import './images/member3.jpg';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 class App extends Component {

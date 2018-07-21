@@ -131,18 +131,6 @@ ul#header-ul li {
     margin: 4rem 0 0 0;
 }
 
-.flexbox {
-    display: table;
-    position: relative;
-    width: 47.794117647059%; /* 520 / 1088 */
-    padding-top: 28.492647058824%; /* 310 / 1088 */
-    margin-bottom: 2rem;
-    background-image: url("https://dummyimage.com/520x310/c2c0c2/fff.jpg&text=520x310");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top center;
-}
-
 .test-flexbox {
     display: table;
     position: relative;
@@ -241,22 +229,49 @@ p.flex-inner-description {
 
 #footer-wrapper {
     background-color: orange;
-    padding: 3rem 0 15rem 0;
+    padding: 2rem 0 10rem 0;
+    margin-top: 10rem;
+}
+
+h1.footer-name{
+    margin: 0;
+}
+
+ul#footer-address {
+    margin-top: 5px;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul#footer-address li {
+    padding: 5px 5px 5px 0;
+    font-weight: 600;
+}
+
+#footer-ul-wrapper-1 {
+    display: inline-block;
+    width: 50%;
+}
+
+#footer-ul-wrapper-2 {
+    display: inline-block;
+    width: 50%;
 }
 
 ul#footer-ul {
     float: right;
-    display: inline-block;
     list-style: none;
-    padding: 10px 30px 0 0;
+    padding: 0 0 0 20%;
+    margin-bottom: 90px;
 }
 
 ul#footer-ul li {
     display: inline;
     text-align: center;
-    padding: 20px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 /* SERVICES */
@@ -323,7 +338,7 @@ ul#footer-ul li {
 .services-push-out-text {
     position: absolute;
     top: 80px;
-    left: 350px;
+    left: 370px;
     z-index: -1;
     color: white;
     font-size: 25px;
@@ -412,7 +427,7 @@ ul#footer-ul li {
 .services-push-out-text-right {
     position: absolute;
     top: 80px;
-    right: 350px;
+    right: 370px;
     z-index: -1;
     color: white;
     font-size: 25px;
@@ -458,14 +473,121 @@ ul#footer-ul li {
 
 /* CONTACT */
 
-form {
-    background: lightgray;
-    width: 70%;
+#form-container {
+    max-width: 700px;
     margin: 0 auto;
 }
 
-/* TEST TEST TEST */
+form {
+    width: 100%;
+}
 
-.show-page-text {
-    margin-top: 100px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr td {
+    width: 50%;
+    align: left;
+}
+
+table tr td .email {
+    margin-left: 5%;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 2rem;
+    margin-right: .3rem;
+    color: #999;
+}
+
+textarea {
+    width: 100%;
+    margin-top: .5rem;
+    border: 1px solid #ccc;
+}
+
+input {
+    border: 1px solid #ccc;
+    height: 2rem;
+    padding: 1.3rem 0 1.3rem .8rem;
+    width: 95%;
+    font-size: 22px;
+    margin-top: .5rem;
+    outline: none;
+}
+
+#center-submit-button {
+    text-align: center;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    padding: .5rem 1rem;
+    height: 3rem;
+    background-color: darkgreen;
+    color: #fff;
+    outline: none;
+    border: none;
+    margin: 2rem 0;
+    text-align: center;
+    width: 60%;
+    align: center;
+    /*box-shadow: 0px 2px 5px 0px #999;*/
+    box-shadow: 0px 5px 15px 0px #999;
+}
+
+input[type=submit]:hover {
+    background-color: green;
+}
+
+input[type=submit]:active {
+    background-color: darkgreen;
+    box-shadow: 0px 1px 5px 0px #999;
+}
+
+/* TEAM */
+
+.team-flexbox-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 5rem;
+}
+
+.team-flexbox {
+    width: 46%;
+    position: relative;
+}
+
+.team-flexbox-background::after {
+    content: '';
+    background-color: lightgray;
+    position: absolute;
+    top: 5%;
+    left: 6%;
+    width: 90%;
+    height: 90%;
+    z-index: 0;
+
+}
+
+.team-flex-padding {
+    padding-left: 2rem;
+    padding-top: 15%;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+img.border-radius {
+    border-radius: 50%;
+}
+
+.team-flexbox img {
+    position: relative;
+    left: 2px;
+    z-index: 1;
+
 }
