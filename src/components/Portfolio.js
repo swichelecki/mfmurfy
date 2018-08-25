@@ -16,7 +16,7 @@ class Portfolio extends Component {
 
     componentDidMount(){
 
-        const uri = 'https://api.vimeo.com/users/nolanjdowns/videos';
+        const uri = 'https://api.vimeo.com/users/user1162241/videos';
 
         let headers = new Headers({
             'Accept': 'application/vnd.vimeo.*+json',
@@ -69,7 +69,8 @@ class Portfolio extends Component {
 
         return(
             <div id="page-wrapper">
-                <div className="container portfolio-top-margin">
+                <h1 className="we-can-help portfolio-top-margin">Our Work</h1>
+                <div className="container">
                     <PortfolioVideos state={this.state} onclick={this.openCloseModal} stopVideo={this.stopVideo}/>
                 </div>
             </div>
@@ -105,12 +106,16 @@ class PortfolioVideos extends Component {
                 const modal = {display: showOrHide};
 
                 return(
-                    <div style={style} key={index} className="test-flexbox" onClick={() => this.props.onclick(data.uri)}>
+                    <div style={style} key={index} className="video-flexbox" onClick={() => this.props.onclick(data.uri)}>
                         <div className="flex-inner-wrapper">
                             <p className="flex-inner-title">{data.name}</p>
                             <p className="flex-inner-description">{data.description}</p>
                         </div>
                         <div id="modal-wrapper" style={modal} onClick={this.props.stopVideo}>
+                            <a onClick={this.props.stopVideo}>
+                                <i className="fas fa-times-circle">
+                                </i>
+                            </a>
                             <div id="modal-container" dangerouslySetInnerHTML={{ __html: data.embed.html}}>
                             </div>
                         </div>

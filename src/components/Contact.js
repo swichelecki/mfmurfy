@@ -16,26 +16,22 @@ class Contact extends Component {
 
         return(
             <div id="page-wrapper">
-            <h1 className="we-can-help">Contact Us</h1>
+            <h1 className="we-can-help portfolio-top-margin">Contact Us</h1>
                 <div id="form-container">
-                    <form action="https://formspree.io/swichelecki@gmail.com" method="POST">
+                    <form action="https://formspree.io/david_e_bright@yahoo.com" method="POST">
                         <table>
-                            <tr>
-                                <td>
-                                    <label>Name</label>
-                                </td>
-                                <td>
-                                    <label className="email">Email</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="text" name="name" />
-                                </td>
-                                <td>
-                                    <input className="email" type="email" name="_replyto" />
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label>Name</label>
+                                        <input type="text" name="name" />
+                                    </td>
+                                    <td>
+                                        <label className="email">Email</label>
+                                        <input className="email" type="email" name="_replyto" />
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                         <br/>
                         <label>Message </label><br />

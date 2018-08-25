@@ -17,7 +17,7 @@ class Team extends Component {
         return(
             <div id="page-wrapper">
                 <div className="container">
-                    <h1 className="we-can-help">Our Team</h1>
+                    <h1 className="we-can-help portfolio-top-margin">Our Team</h1>
                     <div className="team-flexbox-container">
                         <div className="team-flexbox team-flexbox-background">
                             <img src="/images/member2.jpg" className="border-radius"/>
@@ -27,11 +27,14 @@ class Team extends Component {
                         </div>
                     </div>
                     <div className="team-flexbox-container">
-                        <div className="team-flexbox team-flex-padding">
+                        <div className="team-flexbox team-flex-padding hide-mobile">
                         Janine Bright's production work spans shorts like "Why Come There Ain't No Black People in Mayberry," to the unreleased feature, "White Elephant Party." She has years of experience on the set, behind the scenes and working a festival crowd.
                         </div>
                         <div className="team-flexbox team-flexbox-background">
                             <img src="/images/member3.jpg" className="border-radius"/>
+                        </div>
+                        <div className="team-flexbox team-flex-padding show-mobile">
+                        Janine Bright's production work spans shorts like "Why Come There Ain't No Black People in Mayberry," to the unreleased feature, "White Elephant Party." She has years of experience on the set, behind the scenes and working a festival crowd.
                         </div>
                     </div>
                 </div>

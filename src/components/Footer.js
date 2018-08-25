@@ -15,9 +15,10 @@ class Footer extends Component {
                 <div id="page-wrapper">
                     <div className="container">
                     <div id="footer-ul-wrapper-1">
-                        <h1 className="footer-name"><Link to="/">MF Murpy</Link></h1>
+                        <h1 className="footer-name"><Link to="/">MF Murfy Films</Link></h1>
                             <ul id="footer-address">
-                                <li>2545 S. Dearborn, Chicago, IL 60616</li>
+                                <li>2545 S. Dearborn</li>
+                                <li>Chicago, IL 60616</li>
                                 <li>Email: <a href="mailto:info@mfmurfy.com">info@mfmurfy.com</a></li>
                                 <li>&copy; 2018</li>
                             </ul>

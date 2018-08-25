@@ -19,7 +19,7 @@ class Home extends Component {
 
         window.scrollTo(0,0);
 
-        const uri = 'https://api.vimeo.com/users/nolanjdowns/videos';
+        const uri = 'https://api.vimeo.com/users/user1162241/videos';
 
         let headers = new Headers({
             'Accept': 'application/vnd.vimeo.*+json',
@@ -71,16 +71,27 @@ class Home extends Component {
     render(){
 
         return(
+            <div>
             <div id="page-wrapper">
-                <div className="container">
+                <div className="container portfolio-top-margin">
                     <div className="home-video">
-                        <iframe src="https://player.vimeo.com/video/271787074" width="1280" height="720" frameBorder="0"></iframe>
+                        <iframe src="https://player.vimeo.com/video/69867724" width="1280" height="720" frameBorder="0"></iframe>
                     </div>
-                    <p className="home-text-points">Our Most Recent Work</p>
-                    <HomeVideos state={this.state} onclick={this.openCloseModal} stopVideo={this.stopVideo}/>
-                    <p className="home-text-points home-text-point-bottom-link"><Link to="/portfolio">See Our Full Portfolio</Link></p>
                 </div>
             </div>
+            <div className="home-text-points-wrapper-top">
+                <h1 className="home-text-points">Our Most Recent Work</h1>
+            </div>
+            <div id="page-wrapper">
+                <div className="container">
+                    <HomeVideos state={this.state} onclick={this.openCloseModal} stopVideo={this.stopVideo}/>
+                    <div className="gray-line"></div>
+                </div>
+            </div>
+            <div className="home-text-points-wrapper">
+                <h1 className="home-text-points home-text-point-bottom-link"><Link to="/portfolio">See Our Full Portfolio</Link></h1>
+            </div>
+        </div>
         );
     }
 }
@@ -113,12 +124,16 @@ class HomeVideos extends Component {
                 const modal = {display: showOrHide};
 
                 return(
-                    <div style={style} key={index} className="test-flexbox" onClick={() => this.props.onclick(data.uri)}>
+                    <div style={style} key={index} className="video-flexbox home-gray-line" onClick={() => this.props.onclick(data.uri)}>
                         <div className="flex-inner-wrapper">
                             <p className="flex-inner-title">{data.name}</p>
                             <p className="flex-inner-description">{data.description}</p>
                         </div>
                         <div id="modal-wrapper" style={modal} onClick={this.props.stopVideo}>
+                            <a onClick={this.props.stopVideo}>
+                                <i className="fas fa-times-circle">
+                                </i>
+                            </a>
                             <div id="modal-container" dangerouslySetInnerHTML={{ __html: data.embed.html}}>
                             </div>
                         </div>
