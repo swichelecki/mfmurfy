@@ -52,6 +52,8 @@ class Portfolio extends Component {
             this.setState({
                 uri: uri
             });
+
+            document.getElementById('body').className="remove-transition-for-modal";
     }
 
     stopVideo(){

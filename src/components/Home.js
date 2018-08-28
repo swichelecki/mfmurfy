@@ -55,6 +55,11 @@ class Home extends Component {
             this.setState({
                 uri: uri
             });
+
+            // for some reason transform on body tag was messing up the modals
+
+            document.getElementById('body').className="remove-transform-for-modal";
+
     }
 
     stopVideo(){

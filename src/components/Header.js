@@ -23,7 +23,7 @@ class Header extends Component{
 
                 clientWidth = window.innerWidth;
 
-                if (clientWidth >= 640) {
+                if (clientWidth >= 745) {
 
                     var navBar = document.getElementsByClassName('header')[0];
 

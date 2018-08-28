@@ -447,7 +447,7 @@ ul#footer-address li a:hover {
 }
 
 .we-can-help {
-    margin: 0 0 100px 0;
+    margin: 50px 0 100px 0;
     text-align: center;
     font-size: 40px;
 }
@@ -772,6 +772,12 @@ input[type=submit]:active {
     transition: all 0.3 ease;
 }
 
+.remove-transform-for-modal {
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width:818px) {
@@ -796,7 +802,6 @@ input[type=submit]:active {
     .service-mobile-text-box {
         display: block;
     }
-
 
     .services-div-wrapper {
         box-shadow: none;
@@ -823,7 +828,6 @@ input[type=submit]:active {
     }
 
     .we-can-help {
-        font-size: 28px;
         margin: 0 0 4rem 0;
         padding-top: 11rem;
     }
@@ -857,6 +861,11 @@ input[type=submit]:active {
         padding: 2rem 0 2rem 0;
         margin: .5rem 0 6rem 0;
     }
+
+    .we-can-help {
+        margin: 0 0 4rem 0;
+        padding-top: 10rem;
+    }
 }
 
 @media (min-width:400px) and (max-width:745px) {
@@ -882,6 +891,14 @@ input[type=submit]:active {
 }
 
 @media (max-width:745px) {
+
+    .header {
+        position: static;
+    }
+
+    .portfolio-top-margin {
+        padding-top: 2.6rem;
+    }
 
     .team-flexbox-container {
         display: block;
@@ -926,6 +943,11 @@ input[type=submit]:active {
         margin: 3.5rem 0 6rem 0;
     }
 
+    .we-can-help {
+        margin: 60px 0 4rem 0;
+        padding-top: 0rem;
+    }
+
 }
 
 @media (max-width:625px) {
@@ -963,11 +985,11 @@ input[type=submit]:active {
 
     /*.home-video {
         margin-top: 7.5rem;
-    }*/
+    }
 
     .portfolio-top-margin {
         padding-top: 9.1rem;
-    }
+    }*/
 }
 
 @media (min-width:560px) and (max-width:670px) {
@@ -989,7 +1011,7 @@ input[type=submit]:active {
 @media (max-width:560px) {
 
     h1.header-name {
-        padding: 20px 0 25px 40px;
+        padding: 20px 0 25px 20px;
         font-size: 30px;
     }
 
@@ -1000,7 +1022,7 @@ input[type=submit]:active {
 
     .portfolio-top-margin {
         /*margin-top: 7.7rem;*/
-        padding-top: 8.5rem;
+        /*padding-top: 8.5rem;*/
     }
 
     .flexbox-container {
@@ -1024,8 +1046,8 @@ input[type=submit]:active {
 
     .we-can-help {
         font-size: 5.3vw;
-        margin: 0 0 2rem 0;
-        padding-top: 9.5rem;
+        margin: 0px 0 2rem 0;
+        padding-top: 2rem;
     }
 
     p.flex-inner-title {
@@ -1098,8 +1120,9 @@ input[type=submit]:active {
     }
 
     .we-can-help {
+        margin: 20px 0 55px 0;
         font-size: 25px;
-        margin-bottom: 4rem;
+
     }
 
     h1.home-text-points.home-text-point-bottom-link {
